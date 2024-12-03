@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <style>
+
+    body {
+        background-color: #E6CDB5;
+    }
+
+    form {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: solid;
+        background-color: #D9B28C;;
+        border-color: #966b46;
+        border-radius: 8px;
+        font-family: Arial, sans-serif;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    form h2 {
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+  
+    form label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #000000;
+    }
+  
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form input[type="number"],
+    form input[type="date"],
+    form input[type="time"],
+    form input[type="file"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+  
+    form input::placeholder {
+        color: #aaa;
+    }
+  
+    form input[disabled],
+    form input[readonly] {
+        background-color: #f1f1f1;
+        color: #000000;
+        cursor: not-allowed;
+    }
+  
+    form input[type="radio"],
+    form input[type="checkbox"] {
+     margin-right: 5px;
+    }
+  
+    form label[for="Yes"],
+    form label[for="No"],
+    form label[for="Male"],
+    form label[for="Female"] {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 14px;
+        color: #000000;
+    }
+  
+    form input[type="submit"],
+    form input[type="reset"] {
+        width: 48%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        color: white;
+        background-color: #966b46;
+        cursor: pointer;
+     transition: background-color 0.3s;
+    }
+
+     form input[type="reset"] {
+        background-color: #977453;
+    }
+  
+     form input[type="submit"]:hover {
+        background-color: #3B3024; 
+    }
+  
+    form input[type="reset"]:hover {
+        background-color: #3B3024; 
+     }
+  
+    form a {
+        color: #007BFF;
+        text-decoration: none;
+        font-size: 14px;
+     }
+  
+     form a:hover {
+     text-decoration: underline;
+    }
+  
+
+    form label[for="Already have an account?"],
+    form a {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+  
+    </style>
+</head>
+<body>
+    <form>
+        <form>
+            <h2>Sign in</h2>
+            <label for="Username">Username:</label>
+            <input type="text" size="18" maxlength="20" placeholder="Enter Name Here" required/><br>
+    
+            <label for="Email">Email:</label>
+            <input type="email" size="18" placeholder="Enter Email Here" required/><br>
+    
+            <label for="Password">Password:</label>
+            <input type="password" size="18" maxlength="20" placeholder="Enter Password Here" required/><br>
+    
+            <label for="Phone Number">Phone Number:</label>
+            <input type="text" size="18" maxlength="11" placeholder="09*********" required/><br>
+    
+            <label for="Age">Age:</label>
+            <input type="number" size="18"><br>
+    
+            <label for="Date of Birth">Date of Birth:</label>
+            <input type="date" size="18"/><br>
+    
+            <label for="TTime to submit">Time to submit:</label>
+            <input type="time" size="18"/><br>
+    
+            <label for="Gender">Gender:</label>
+            <label for="Male">Male</label>
+            <input id="Male" name="Gender" type="radio">
+            <label for="Female">Female</label>
+            <input id="Female" name="Gender" type="radio"> <br>
+    
+            <input type="text" size="18" placeholder="Valid ID" disabled><br>
+            <input type="file" accept=".pdf, .jpg, .docx/*" multiple/><br>
+    
+            <input type="text" size="18" placeholder="Do you accept this term?" readonly/><br>
+            <label for="Yes">Yes</label>
+            <input type="checkbox" id="Yes" name="Answer"/>
+            <label for="No">No</label>
+            <input type="checkbox" id="No" name="Answer"/><br>
+    
+            <input type="submit" value="submit">
+            <input type="reset"><br>
+    
+            <label for="Already have an account?">Already have an account?</label>
+            <a href="Log in.html" target="_self">Log in Here</a>
+    
+    
+    
+    
+        </form>
+    </form>
+</body>
+</html>

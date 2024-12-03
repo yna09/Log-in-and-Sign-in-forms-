@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log in</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E6CDB5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            text-align: center;
+            width: 340px;
+            max-width: 400px;
+        }
+        
+        .heading {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #5a3826;
+        }
+        
+        
+        .login-form {
+            background-color:#D9B28C;
+            padding: 20px;
+            border: solid;
+            border-color: #966b46;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .login-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input::placeholder {
+            color: #aaa;
+        }
+        
+        label {
+            text-align: left;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        
+        input {
+            padding: 15px;
+            margin-bottom: 15px;
+            width: 90%;
+            border: 1px solid #966b46;
+            border-radius: 4px;
+            border-color: #966b46;
+            align-items: center;
+            margin-left: 20px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+        }
+        input[type="email"] {
+            margin-left: 0px;
+        }
+        input[type="password"] {
+            margin-left: 0px;
+        }
+        
+        input[type="submit"] {
+            background-color: #977453;
+            color: white;
+            border-color: #966b46;
+            cursor: pointer;
+            margin-bottom: 20px;
+            margin-left: 0px;
+            width: 100%;
+            transition: background-color 0.3s
+        } 
+        input[type="submit"]:hover {
+            background-color: #3B3024; 
+        }
+        
+        input[type="button"] {
+            background-color: #966b46;
+            color: white;
+            border-color: #966b46;
+            cursor: pointer;
+            margin-bottom: 20px;
+            margin-left: 0px;
+            width: 100%;
+            transition: background-color 0.3s
+
+        }
+        input[type="button"]:hover {
+            background-color: #3B3024; 
+        }   
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Untitled Library Log in</h1>
+        <div class="login-form">
+            <form target="_blank">
+                <label for="email">Email:</label>
+                <input type="email" size="20" placeholder="Email" required/>
+                <label for="password">Password:</label>
+                <input type="password" size="20" placeholder="Password" maxlength="20" required/>
+                <input type="submit" name="submit" value="Login"/>
+    
+
+                <label for="Don't have an account?">Don't have an account?</label>
+                <a href="Register.html" target="_blank">
+                <input type="button" value="Sign up now"/>
+            </form>
+            
+</html>
